@@ -1,5 +1,6 @@
 body {
-    background-color:  red;
+    background-color: hsl(202, 86%, 94%)
+    ;
     padding: 10px 10px 10px 10px;
     margin: 0px;
     border: 0px;
@@ -15,11 +16,11 @@ body {
      border-radius: 20px;}
 
             /* here are all the boxes  */ 
-.container .box1 {height: 85px; width: 425px; background-color: blue; display: flex; align-items: center; gap:180px;}
-.container .box2 {height: 85px; width: 425px; background-color: green;display: flex; flex-direction: column;}
-.container .box3 {height: 85px; width: 425px; background-color: greenyellow;display: grid; grid-template-columns: 1fr 1fr; gap: 10px;  }
-.container .box4 {height: 85px; width: 425px; background-color: plum; display: grid; grid-template-columns:auto; align-items: self-start; gap: 10px; padding: 0px 0px 0px 0px;}
-.container .box5 {height: 85px; width: 425px; background-color: yellow; display:flexbox; align-content: center ;gap:0px;}
+.container .box1 {height: 85px; width: 425px; background-color: ; display: flex; align-items: center; gap:180px;}
+.container .box2 {height: 85px; width: 425px; background-color  ;display: flex; flex-direction: column;}
+.container .box3 {height: 85px; width: 425px; background-color: ;display: grid; grid-template-columns: 1fr 1fr; gap: 10px;  }
+.container .box4 {height: 85px; width: 425px; background-color: ; display: grid; grid-template-columns:auto; align-items: self-start; gap: 10px; padding: 0px 0px 0px 0px;}
+.container .box5 {height: 85px; width: 425px; background-color: ; display:flexbox; align-content: center ;gap:0px;}
 
 
 .container2{
