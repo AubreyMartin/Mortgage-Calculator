@@ -21,26 +21,26 @@ body {
 /* here are all the boxes  */
 .container .box1 {
   height: 85px;
-  width: 425px;
+  min-width: 426px;
   display: flex;
   align-items: center;
   gap: 180px;
 }
 .container .box2 {
   height: 85px;
-  width: 425px;
+  max-width: 426px;
   display: flex;
   flex-direction: column;
 }
 .container .box3 {
   height: 85px;
-  width: 425px;
+  min-width: 425px;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr 1fr;
   align-items: self-start;
-  gap: 10px;
-  padding: 0px 0px 0px 0px;
+  gap: 22px;
 }
+
 .container .box5 {
   height: 85px;
   width: 425px;
@@ -88,7 +88,7 @@ body {
   height: 47px;
   border: 1px solid hsl(200, 24%, 40%);
   border-radius: 4px;
-  padding-left: 43px; /* Space for the £ symbol */
+  padding-left: 47px; /* Space for the £ symbol */
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -115,9 +115,8 @@ body {
 }
 
 .container .box3 input {
-  max-width: 200px;
+  min-width: 202px;
   height: 47px;
-  padding-right: 20px;
   border: 1px solid hsl(200, 24%, 40%);
   border-radius: 4px;
 }
@@ -125,7 +124,7 @@ body {
 .container .box3 .years,
 .container .box3 .percentage-symbol {
   position: absolute;
-  right: 40px; /* Position symbols to the right */
+  right: 2px; /* Position symbols to the right */
   top: 50%;
   transform: translateY(-50%);
   color: hsl(200, 24%, 40%);
@@ -135,14 +134,14 @@ body {
 }
 
 .container .box3 {
-  max-width: 424px;
+  max-width: 425px;
   height: 47px;
   position: relative;
   margin-bottom: 15px;
 }
 .container .box4 .Repayment,
 .container .box4 .Interest-Only {
-  min-width: 425px;
+  max-width: 425px;
   max-height: 47px;
   border: 1px solid hsl(200, 24%, 40%);
   border-radius: 5px;
