@@ -3,13 +3,14 @@ document
   .addEventListener("click", function (event) {
     event.preventDefault(); // Prevent form submission
 
-    //  Get input values
-    const amount = document.getElementById("amount").Value;
+    // Get input values
+    const amount = document.getElementById("Amount").value;
     const years = document.getElementById("years").value;
     const interest = document.getElementById("interest").value;
     const mortgageType = document.querySelector(
       'input[name="Mortgage_type"]:checked'
     );
+
     // Select the result container
     const resultContainer = document.querySelector(".container2");
 
@@ -22,10 +23,12 @@ document
     // Hide error message if inputs are valid
     document.getElementById("error-message").style.display = "none";
 
-    // Calculate monthly payment
+    // Convert values to numbers
     const principal = parseFloat(amount);
     const rate = parseFloat(interest) / 100 / 12;
     const months = parseFloat(years) * 12;
+
+    // Calculate monthly payment
     const monthlyPayment =
       mortgageType.value === "Repayment"
         ? (principal * rate) / (1 - Math.pow(1 + rate, -months))
