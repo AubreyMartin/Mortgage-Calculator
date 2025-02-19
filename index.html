@@ -12,7 +12,8 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script src="script.js" defer></script>
+    <script> src=</script>
+    <script src="js/script.js" defer></script>
 
     <title>Frontend Mentor | Mortgage repayment calculator</title>
 
@@ -93,8 +94,8 @@
       <!-- Completed results end -->
 
       <div class="container2">
-        <div>
-          <img
+       <div >
+        <div><img
             src="assets/images/illustration-empty.svg"
             class="illustration-empty"
           />
@@ -106,36 +107,41 @@
         </p>
       </div>
 
-
-
-      <br><br><br><br><br></br></br>
-
-
-
-      
-      <h1> Your results</h1>
-      <p>your results are shown below based on the information you provided. 
-      To adjust the results, edit the form and click "calculate repayments" again. 
-      </p>
-        <!-- your monthly repayments -->
-
       <div>
-        <output class="monthly repayments">
+        <h1> Your results</h1>
+        <p>your results are shown below based on the information you provided. 
+        To adjust the results, edit the form and click "calculate repayments" again. 
+        </p>
+          <!-- your monthly repayments -->
+        <div class="Outputbox">
+           <div class="monthlyrepayments">
+            <label for="Repayment" class="Repayment">Your monthly repayments</label>
+          <output type="number" id="repayments" name="monthlyrepayments"> </output>
+        </div>
+        <div class="center-line"></div>
 
-        </output>
-
-        <output class=" total">
-
-        </output>
+  
+          <div class="totalrepayments"> 
+            <label for="Repayment" class="label">Total you'll repay over the term</label>
+          <output type="number" id="totalrepayments" name="totalrepayments"> </output>
+        </div>
+        </div>
         
+        </div>
+
+
 
 
       </div>
 
 
+
+
+
+
+
+
     </div>
-
-
 
 
 
