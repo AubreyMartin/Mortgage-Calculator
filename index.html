@@ -12,6 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="script.js" defer></script>
 
     <title>Frontend Mentor | Mortgage repayment calculator</title>
 
@@ -89,6 +90,7 @@
       </div>
 
       <!-- container2 -->
+      <!-- Completed results end -->
 
       <div class="container2">
         <div>
@@ -100,9 +102,55 @@
         <h1>Results shown here</h1>
         <p>
           Complete the form and click "calculate repayments" to see what your
-          monthly repayments would
+          monthly repayments would be.
         </p>
       </div>
+
+
+
+      <br><br><br><br><br></br></br>
+
+
+
+      
+      <h1> Your results</h1>
+      <p>your results are shown below based on the information you provided. 
+      To adjust the results, edit the form and click "calculate repayments" again. 
+      </p>
+        <!-- your monthly repayments -->
+
+      <div>
+        <output class="monthly repayments">
+
+        </output>
+
+        <output class=" total">
+
+        </output>
+        
+
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+      <!-- The error page and logic  -->
+      <div
+        id="error-message"
+        style="display: none; color: red; text-align: center"
+      >
+        Please fill in all fields before calculating.
+      </div>
+
+
+
+
 
       <!-- Completed results end -->
     </form>
